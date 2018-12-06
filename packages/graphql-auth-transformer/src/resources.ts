@@ -316,7 +316,9 @@ export class ResourceFactory {
                 set(ref(allowedOwnersVariable), raw(`$util.defaultIfNull($${variableToCheck}.${ownerAttribute}, null)`)),
                 isUsern ?
                     // tslint:disable-next-line
-                    set(ref('identityValue'), raw(`$util.defaultIfNull($ctx.identity.claims.get("${rawUsername}"), $util.defaultIfNull($ctx.identity.claims.get("${identityAttribute}"), "${NONE_VALUE}"))`)) :
+                    //set(ref('identityValue'), raw(`$util.defaultIfNull($ctx.identity.claims.get("${rawUsername}"), $util.defaultIfNull($ctx.identity.claims.get("${identityAttribute}"), "${NONE_VALUE}"))`)) :
+                    //set(ref('identityValue'), raw(`$util.defaultIfNull($ctx.identity.claims.get("${rawUsername}"), $util.defaultIfNull($ctx.identity.claims.get("${identityAttribute}"), $util.defaultIfNull($ctx.identity.cognitoIdentityId, "${NONE_VALUE}")))`)) :
+                    set(ref('identityValue'), raw(`$util.defaultIfNull($ctx.identity.claims.get("${rawUsername}"), $util.defaultIfNull($ctx.identity.claims.get("${identityAttribute}"), $util.defaultIfNull($ctx.identity.cognitoIdentityId,$util.defaultIfNull($ctx.identity.userArn, "${NONE_VALUE}"))))`)) :
                     set(ref('identityValue'), raw(`$util.defaultIfNull($ctx.identity.claims.get("${identityAttribute}"), "${NONE_VALUE}")`)),
                 // If a list of owners check for at least one.
                 iff(
@@ -464,7 +466,9 @@ export class ResourceFactory {
                 raw(`$util.qr($ownerAuthExpressionNames.put("#${ownerName}", "${ownerAttribute}"))`),
                 // tslint:disable
                 isUsern ?
-                    raw(`$util.qr($ownerAuthExpressionValues.put(":${identityName}", $util.dynamodb.toDynamoDB($util.defaultIfNull($ctx.identity.claims.get("${rawUsername}"), $util.defaultIfNull($ctx.identity.claims.get("${identityAttribute}"), "${NONE_VALUE}")))))`) :
+                    //raw(`$util.qr($ownerAuthExpressionValues.put(":${identityName}", $util.dynamodb.toDynamoDB($util.defaultIfNull($ctx.identity.claims.get("${rawUsername}"), $util.defaultIfNull($ctx.identity.claims.get("${identityAttribute}"), "${NONE_VALUE}")))))`) :
+                    //raw(`$util.qr($ownerAuthExpressionValues.put(":${identityName}", $util.dynamodb.toDynamoDB($util.defaultIfNull($ctx.identity.claims.get("${rawUsername}"), $util.defaultIfNull($ctx.identity.claims.get("${identityAttribute}"), $util.defaultIfNull($ctx.identity.cognitoIdentityId, "${NONE_VALUE}"))))))`) :
+                    raw(`$util.qr($ownerAuthExpressionValues.put(":${identityName}", $util.dynamodb.toDynamoDB($util.defaultIfNull($ctx.identity.claims.get("${rawUsername}"), $util.defaultIfNull($ctx.identity.claims.get("${identityAttribute}"), $util.defaultIfNull($ctx.identity.cognitoIdentityId, $util.defaultIfNull($ctx.identity.userArn, "${NONE_VALUE}")))))))`) :
                     raw(`$util.qr($ownerAuthExpressionValues.put(":${identityName}", $util.dynamodb.toDynamoDB($util.defaultIfNull($ctx.identity.claims.get("${identityAttribute}"), "${NONE_VALUE}"))))`)
                 // tslint:enable
             )
@@ -548,7 +552,9 @@ export class ResourceFactory {
                 set(ref(allowedOwnersVariable), ref(`${variableToCheck}.${ownerAttribute}`)),
                 isUsern ?
                     // tslint:disable-next-line
-                    set(ref('identityValue'), raw(`$util.defaultIfNull($ctx.identity.claims.get("${rawUsername}"), $util.defaultIfNull($ctx.identity.claims.get("${identityAttribute}"), "${NONE_VALUE}"))`)) :
+                    // set(ref('identityValue'), raw(`$util.defaultIfNull($ctx.identity.claims.get("${rawUsername}"), $util.defaultIfNull($ctx.identity.claims.get("${identityAttribute}"), "${NONE_VALUE}"))`)) :
+                    //set(ref('identityValue'), raw(`$util.defaultIfNull($ctx.identity.claims.get("${rawUsername}"), $util.defaultIfNull($ctx.identity.claims.get("${identityAttribute}"), $util.defaultIfNull($ctx.identity.cognitoIdentityId, "${NONE_VALUE}")))`)) :
+                    set(ref('identityValue'), raw(`$util.defaultIfNull($ctx.identity.claims.get("${rawUsername}"), $util.defaultIfNull($ctx.identity.claims.get("${identityAttribute}"), $util.defaultIfNull($ctx.identity.cognitoIdentityId,$util.defaultIfNull($ctx.identity.userArn, "${NONE_VALUE}"))))`)) :
                     set(ref('identityValue'), raw(`$util.defaultIfNull($ctx.identity.claims.get("${identityAttribute}"), "${NONE_VALUE}")`)),
                 iff(
                     raw(`$util.isList($${allowedOwnersVariable})`),
