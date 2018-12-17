@@ -448,6 +448,7 @@ export function makeModelConnectionField(fieldName: string, returnTypeName: stri
     return makeField(
         fieldName,
         [
+            makeInputValueDefinition('queryKey', makeNamedType('String')),
             makeInputValueDefinition('filter', makeNamedType(ModelResourceIDs.ModelFilterInputTypeName(returnTypeName))),
             makeInputValueDefinition('sortDirection', makeNamedType('ModelSortDirection')),
             makeInputValueDefinition('limit', makeNamedType('Int')),
