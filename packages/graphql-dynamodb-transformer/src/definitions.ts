@@ -436,7 +436,10 @@ export function makeModelScanField(fieldName: string, returnTypeName: string): F
     return makeField(
         fieldName,
         [
+            makeInputValueDefinition('queryKey', makeNamedType('String')),
+            makeInputValueDefinition('queryValue', makeNamedType('String')),
             makeInputValueDefinition('filter', makeNamedType(ModelResourceIDs.ModelFilterInputTypeName(returnTypeName))),
+            makeInputValueDefinition('sortDirection', makeNamedType('ModelSortDirection')),
             makeInputValueDefinition('limit', makeNamedType('Int')),
             makeInputValueDefinition('nextToken', makeNamedType('String'))
         ],
@@ -449,6 +452,7 @@ export function makeModelConnectionField(fieldName: string, returnTypeName: stri
         fieldName,
         [
             makeInputValueDefinition('queryKey', makeNamedType('String')),
+            makeInputValueDefinition('queryValue', makeNamedType('String')),
             makeInputValueDefinition('filter', makeNamedType(ModelResourceIDs.ModelFilterInputTypeName(returnTypeName))),
             makeInputValueDefinition('sortDirection', makeNamedType('ModelSortDirection')),
             makeInputValueDefinition('limit', makeNamedType('Int')),
