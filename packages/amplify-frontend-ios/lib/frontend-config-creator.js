@@ -6,7 +6,7 @@ const fs = require('fs');
 function createAmplifyConfig(context, amplifyResources) {
   const { amplify } = context;
   const projectPath = context.exeInfo ?
-    context.exeInfo.projectConfig.projectPath : amplify.getProjectConfig().projectPath;
+    context.exeInfo.localEnvInfo.projectPath : amplify.getEnvInfo().projectPath;
   const srcDirPath = path.join(projectPath);
 
   if (fs.existsSync(srcDirPath)) {
@@ -52,7 +52,7 @@ function createAWSConfig(context, amplifyResources) {
 function generateAWSConfigFile(context, configOutput) {
   const { amplify } = context;
   const projectPath = context.exeInfo ?
-    context.exeInfo.projectConfig.projectPath : amplify.getProjectConfig().projectPath;
+    context.exeInfo.localEnvInfo.projectPath : amplify.getEnvInfo().projectPath;
   const srcDirPath = path.join(projectPath);
 
   if (fs.existsSync(srcDirPath)) {
@@ -136,12 +136,12 @@ function getPinpointConfig(pinpointResources) {
     PinpointAnalytics: {
       Default: {
         AppId: pinpointResource.output.Id,
-        Region: 'us-east-1',
+        Region: pinpointResource.output.Region,
       },
     },
     PinpointTargeting: {
       Default: {
-        Region: 'us-east-1',
+        Region: pinpointResource.output.Region,
       },
     },
   };

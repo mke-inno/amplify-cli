@@ -1,8 +1,8 @@
-import Template from 'cloudform/types/template'
-import Cognito from 'cloudform/types/cognito'
-import Output from 'cloudform/types/output'
-import GraphQLAPI, { UserPoolConfig } from 'cloudform/types/appSync/graphQlApi'
-import { Fn, StringParameter, Refs, NumberParameter, Condition } from 'cloudform'
+import Template from 'cloudform-types/types/template'
+import Cognito from 'cloudform-types/types/cognito'
+import Output from 'cloudform-types/types/output'
+import GraphQLAPI, { UserPoolConfig } from 'cloudform-types/types/appSync/graphQlApi'
+import { Fn, StringParameter, Refs, NumberParameter, Condition } from 'cloudform-types'
 import { AuthRule } from './AuthRule'
 import {
     str, ref, obj, set, iff, list, raw,
@@ -10,7 +10,7 @@ import {
     or, Expression, SetNode, and, not, parens,
     block
 } from 'graphql-mapping-template'
-import { ResourceConstants } from 'graphql-transformer-common'
+import { ResourceConstants, NONE_VALUE } from 'graphql-transformer-common'
 
 import {
     OWNER_AUTH_STRATEGY,
@@ -19,8 +19,6 @@ import {
     GROUPS_AUTH_STRATEGY,
     DEFAULT_GROUPS_FIELD
 } from './constants'
-
-const NONE_VALUE = '___xamznone____'
 
 function replaceIfUsername(identityField: string): string {
     return (identityField === 'username') ? 'cognito:username' : identityField;

@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.5](https://github.com/aws-amplify/amplify-cli/compare/graphql-http-transformer@3.0.3-beta.0...graphql-http-transformer@3.0.5) (2019-02-11)
+
+**Note:** Version bump only for package graphql-http-transformer
+
+
+
+
+
+## [3.0.3](https://github.com/aws-amplify/amplify-cli/compare/graphql-http-transformer@3.0.3-beta.0...graphql-http-transformer@3.0.3) (2019-02-11)
+
+**Note:** Version bump only for package graphql-http-transformer
+
+
+
+
+
+## [3.0.3-beta.0](https://github.com/aws-amplify/amplify-cli/compare/graphql-http-transformer@3.0.2...graphql-http-transformer@3.0.3-beta.0) (2019-02-11)
+
+**Note:** Version bump only for package graphql-http-transformer
+
+
+
+
+
+<a name="2.0.0-multienv.1"></a>
+# [2.0.0-multienv.1](https://github.com/aws-amplify/amplify-cli/compare/graphql-http-transformer@1.0.18-multienv.0...graphql-http-transformer@2.0.0-multienv.1) (2018-12-31)
+
+
+### Bug Fixes
+
+* update grahql transformer package versions for multienv ([8b4b2bd](https://github.com/aws-amplify/amplify-cli/commit/8b4b2bd))
+
+
+
+
+<a name="1.0.18-multienv.0"></a>
+## [1.0.18-multienv.0](https://github.com/aws-amplify/amplify-cli/compare/graphql-http-transformer@1.0.17...graphql-http-transformer@1.0.18-multienv.0) (2018-11-16)
+
+
+
+
+**Note:** Version bump only for package graphql-http-transformer
+
 <a name="1.0.17"></a>
 ## [1.0.17](https://github.com/aws-amplify/amplify-cli/compare/graphql-http-transformer@1.0.17-beta.0...graphql-http-transformer@1.0.17) (2018-11-09)
 

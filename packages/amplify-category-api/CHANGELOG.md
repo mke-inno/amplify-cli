@@ -3,6 +3,130 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.5](https://github.com/aws-amplify/amplify-cli/compare/amplify-category-api@1.0.3-beta.0...amplify-category-api@1.0.5) (2019-02-11)
+
+**Note:** Version bump only for package amplify-category-api
+
+
+
+
+
+## [1.0.3](https://github.com/aws-amplify/amplify-cli/compare/amplify-category-api@1.0.3-beta.0...amplify-category-api@1.0.3) (2019-02-11)
+
+**Note:** Version bump only for package amplify-category-api
+
+
+
+
+
+## [1.0.3-beta.0](https://github.com/aws-amplify/amplify-cli/compare/amplify-category-api@1.0.2...amplify-category-api@1.0.3-beta.0) (2019-02-11)
+
+**Note:** Version bump only for package amplify-category-api
+
+
+
+
+
+<a name="0.2.1-multienv.7"></a>
+## [0.2.1-multienv.7](https://github.com/aws-amplify/amplify-cli/compare/amplify-category-api@0.2.1-multienv.5...amplify-category-api@0.2.1-multienv.7) (2019-01-30)
+
+
+
+
+**Note:** Version bump only for package amplify-category-api
+
+<a name="0.2.1-multienv.6"></a>
+## [0.2.1-multienv.6](https://github.com/aws-amplify/amplify-cli/compare/amplify-category-api@0.2.1-multienv.5...amplify-category-api@0.2.1-multienv.6) (2019-01-16)
+
+
+
+
+**Note:** Version bump only for package amplify-category-api
+
+<a name="0.2.1-multienv.5"></a>
+## [0.2.1-multienv.5](https://github.com/aws-amplify/amplify-cli/compare/amplify-category-api@0.2.1-multienv.4...amplify-category-api@0.2.1-multienv.5) (2018-12-28)
+
+
+
+
+**Note:** Version bump only for package amplify-category-api
+
+<a name="0.2.1-multienv.4"></a>
+## [0.2.1-multienv.4](https://github.com/aws-amplify/amplify-cli/compare/amplify-category-api@0.2.1-multienv.3...amplify-category-api@0.2.1-multienv.4) (2018-12-21)
+
+
+
+
+**Note:** Version bump only for package amplify-category-api
+
+<a name="0.2.1-multienv.3"></a>
+## [0.2.1-multienv.3](https://github.com/aws-amplify/amplify-cli/compare/amplify-category-api@0.2.1-multienv.2...amplify-category-api@0.2.1-multienv.3) (2018-12-05)
+
+
+### Bug Fixes
+
+* **cli:** remove calls to gluegun's prompt.confirm ([#546](https://github.com/aws-amplify/amplify-cli/issues/546)) ([0080ddb](https://github.com/aws-amplify/amplify-cli/commit/0080ddb))
+
+
+
+
+<a name="0.2.1-multienv.2"></a>
+## [0.2.1-multienv.2](https://github.com/aws-amplify/amplify-cli/compare/amplify-category-api@0.2.1-multienv.1...amplify-category-api@0.2.1-multienv.2) (2018-12-04)
+
+
+
+
+**Note:** Version bump only for package amplify-category-api
+
+<a name="0.2.1-multienv.1"></a>
+## [0.2.1-multienv.1](https://github.com/aws-amplify/amplify-cli/compare/amplify-category-api@0.2.1-multienv.0...amplify-category-api@0.2.1-multienv.1) (2018-11-28)
+
+
+### Features
+
+* add a warning on migration and force compile gql schema ([77fb557](https://github.com/aws-amplify/amplify-cli/commit/77fb557))
+* migration of API GW and Interactions ([a91ba9a](https://github.com/aws-amplify/amplify-cli/commit/a91ba9a))
+* migration of categories - s3,dynamo,lambda,appsync ([#495](https://github.com/aws-amplify/amplify-cli/issues/495)) ([1ef1d21](https://github.com/aws-amplify/amplify-cli/commit/1ef1d21))
+
+
+
+
+<a name="0.2.1-multienv.0"></a>
+## [0.2.1-multienv.0](https://github.com/aws-amplify/amplify-cli/compare/amplify-category-api@0.1.34-multienv.2...amplify-category-api@0.2.1-multienv.0) (2018-11-21)
+
+
+
+
+**Note:** Version bump only for package amplify-category-api
+
+<a name="0.1.34-multienv.2"></a>
+## [0.1.34-multienv.2](https://github.com/aws-amplify/amplify-cli/compare/amplify-category-api@0.1.34-multienv.1...amplify-category-api@0.1.34-multienv.2) (2018-11-19)
+
+
+
+
+**Note:** Version bump only for package amplify-category-api
+
+<a name="0.1.34-multienv.1"></a>
+## [0.1.34-multienv.1](https://github.com/aws-amplify/amplify-cli/compare/amplify-category-api@0.1.34-multienv.0...amplify-category-api@0.1.34-multienv.1) (2018-11-19)
+
+
+
+
+**Note:** Version bump only for package amplify-category-api
+
+<a name="0.1.34-multienv.0"></a>
+## [0.1.34-multienv.0](https://github.com/aws-amplify/amplify-cli/compare/amplify-category-api@0.1.33...amplify-category-api@0.1.34-multienv.0) (2018-11-16)
+
+
+### Features
+
+* multi-environment support for API Gateway ([#418](https://github.com/aws-amplify/amplify-cli/issues/418)) ([24ddf83](https://github.com/aws-amplify/amplify-cli/commit/24ddf83))
+* multi-environment support for interactions category ([4ca2617](https://github.com/aws-amplify/amplify-cli/commit/4ca2617))
+
+
+
+
 <a name="0.1.33"></a>
 ## [0.1.33](https://github.com/aws-amplify/amplify-cli/compare/amplify-category-api@0.1.33-beta.0...amplify-category-api@0.1.33) (2018-11-09)
 

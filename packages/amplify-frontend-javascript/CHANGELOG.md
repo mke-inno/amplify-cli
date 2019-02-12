@@ -3,6 +3,79 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.5](https://github.com/aws-amplify/amplify-cli/compare/amplify-frontend-javascript@1.0.3-beta.0...amplify-frontend-javascript@1.0.5) (2019-02-11)
+
+**Note:** Version bump only for package amplify-frontend-javascript
+
+
+
+
+
+## [1.0.3](https://github.com/aws-amplify/amplify-cli/compare/amplify-frontend-javascript@1.0.3-beta.0...amplify-frontend-javascript@1.0.3) (2019-02-11)
+
+**Note:** Version bump only for package amplify-frontend-javascript
+
+
+
+
+
+## [1.0.3-beta.0](https://github.com/aws-amplify/amplify-cli/compare/amplify-frontend-javascript@1.0.2...amplify-frontend-javascript@1.0.3-beta.0) (2019-02-11)
+
+**Note:** Version bump only for package amplify-frontend-javascript
+
+
+
+
+
+<a name="0.2.1-multienv.3"></a>
+## [0.2.1-multienv.3](https://github.com/aws-amplify/amplify-cli/compare/amplify-frontend-javascript@0.2.1-multienv.0...amplify-frontend-javascript@0.2.1-multienv.3) (2019-01-19)
+
+
+### Features
+
+* **amplify-frontend-javascript:** adding Ember config for amplify-cli ([b4748b9](https://github.com/aws-amplify/amplify-cli/commit/b4748b9))
+
+
+
+
+<a name="0.2.1-multienv.2"></a>
+## [0.2.1-multienv.2](https://github.com/aws-amplify/amplify-cli/compare/amplify-frontend-javascript@0.2.1-multienv.0...amplify-frontend-javascript@0.2.1-multienv.2) (2019-01-16)
+
+
+### Features
+
+* **amplify-frontend-javascript:** adding Ember config for amplify-cli ([b4748b9](https://github.com/aws-amplify/amplify-cli/commit/b4748b9))
+
+
+
+
+<a name="0.2.1-multienv.1"></a>
+## [0.2.1-multienv.1](https://github.com/aws-amplify/amplify-cli/compare/amplify-frontend-javascript@0.2.1-multienv.0...amplify-frontend-javascript@0.2.1-multienv.1) (2018-12-05)
+
+
+
+
+**Note:** Version bump only for package amplify-frontend-javascript
+
+<a name="0.2.1-multienv.0"></a>
+## [0.2.1-multienv.0](https://github.com/aws-amplify/amplify-cli/compare/amplify-frontend-javascript@0.1.34-multienv.0...amplify-frontend-javascript@0.2.1-multienv.0) (2018-11-21)
+
+
+
+
+**Note:** Version bump only for package amplify-frontend-javascript
+
+<a name="0.1.34-multienv.0"></a>
+## [0.1.34-multienv.0](https://github.com/aws-amplify/amplify-cli/compare/amplify-frontend-javascript@0.1.33...amplify-frontend-javascript@0.1.34-multienv.0) (2018-11-16)
+
+
+### Features
+
+* headless Init and configure ([#371](https://github.com/aws-amplify/amplify-cli/issues/371)) ([acd14a8](https://github.com/aws-amplify/amplify-cli/commit/acd14a8))
+
+
+
+
 <a name="0.1.33"></a>
 ## [0.1.33](https://github.com/aws-amplify/amplify-cli/compare/amplify-frontend-javascript@0.1.33-beta.0...amplify-frontend-javascript@0.1.33) (2018-11-09)
 
