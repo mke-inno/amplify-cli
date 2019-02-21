@@ -26,7 +26,7 @@ export const APPSYNC_DEFINED_SCALARS: { [k: string]: string } = {
     AWSDate: 'String',
     AWSTime: 'String',
     AWSDateTime: 'String',
-    AWSTimestamp: 'Int',
+    AWSTimestamp: 'Float',
     AWSEmail: 'String',
     AWSJSON: 'String',
     AWSURL: 'String',
